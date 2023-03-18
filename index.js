@@ -8,7 +8,6 @@ setTimeout(function OpeningCeremony(){
        for( let item in obj){
       obj[item] = generateRandomInteger(10,15);
        }
-    //    console.log(Object.values(obj));
       for( let item in obj){
       if(obj[item] < least){
         least = obj[item];
@@ -32,6 +31,7 @@ for(let item in obj){
         obj[item] = obj[item]+25;
     }
 }
+console.log(obj);
 let max =0;
 let max_color="";
 for( let item in obj){
@@ -40,6 +40,7 @@ for( let item in obj){
       max_color = item;
     }
 }  
+
 console.log(`The ${max_color} has won Race100M`);
 
 
@@ -55,7 +56,6 @@ setTimeout(function LongJump(obj1)  {
             obj[item]= obj[item] + 150;
         }
      }
-    //  console.log(Object.values(obj)); 
 
      let max1 =0;
 let max_color1="";
@@ -65,6 +65,7 @@ for( let item in obj){
       max_color1 = item;
     }
 }  
+console.log(obj);
 console.log(`The ${max_color1} has won LongJump`);
 
 
@@ -86,13 +87,14 @@ console.log(`The ${max_color1} has won LongJump`);
          max_color2 = item;
     }
 }  
+console.log(obj);
 console.log(`The ${max_color2} has won HighJump`);
 
         }
         else{
             console.log("Event was cancelled");
         }
-        // console.log(Object.values(obj));
+    
 
 
 
@@ -132,11 +134,12 @@ console.log(`The ${max_color2} has won HighJump`);
                 third_color =item;
               }
         }
+        console.log(obj);
         console.log(`${first_color} came first with ${first} points`);
         console.log(`${second_color} came second with ${second} points`);
         console.log(`${third_color} came third with ${third} points`);
         
-          
+
 
         },000)
 
